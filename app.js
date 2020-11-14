@@ -1,14 +1,18 @@
 const express = require('express');
 const app = express();
+const path = require('path');
+
+app.set('view engine', 'ejs')
+app.use('public', express.static(path.join(__dirname, 'public')));
 
 
 app.get('/admin', (req, res)=>{
-    res.send("Admin page");
+    res.render("admin");
 })
 
 
 app.get('/', (req, res)=>{
-    res.send("Hello Blog");
+    res.render("home");
 })
 
 
