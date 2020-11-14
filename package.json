@@ -4,6 +4,8 @@
   "description": "A template blog for blogging about my hobbies and things i will want to do one day",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
+    "startDev": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Billbern",
